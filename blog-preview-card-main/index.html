@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    body{
+      background-color: #F4D04E;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    .card{
+      background-color: white;
+      border-radius: 20px;
+      border: 1px solid #111111;
+      filter: drop-shadow(10px 10px black);
+      display: flex;
+      flex-direction: column;
+      max-width: 384px;
+      max-height: 522px;
+    }
+    .banner-image{
+      margin: 24px 24px 12px 24px;
+      max-height: 200px;
+      max-height: 200px;
+      max-width: fit-content;
+      border-radius: 10px;
+    }
+    .card-details{
+      /* Top Right Bottom left */
+      margin: 12px 24px 12px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .card-details p{
+      gap: 12px;
+      margin-block: auto;
+    }
+    .card-details .tag{
+      background-color: #F4D04E;
+      border-radius: 4px;
+      display: inline-block;
+      padding: 4px 12px;
+    }
+    .text-preset{
+      font-family: "Figtree", sans-serif;
+      line-height: 150%;  
+    }
+    .preset-1{     
+      font-weight: 800;
+      font-size: 24px;
+    }
+    .preset-2{
+      font-weight: 500;
+      font-size: 16px;
+      color: #6b6b6b;
+    }
+    .preset-3{
+      font-size: 14px;
+    }
+    .preset-3-bold{
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .profile-detail img{
+      max-width: 32px;
+      max-height: 32px;
+    }
+    .profile-detail{
+      margin: 12px 24px 24px 24px;
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+    }
+    .profile-detail p{
+      margin-block: auto;
+    }
+    .heading{
+      text-decoration: none;
+      color: inherit;
+    }
+    .heading:hover{
+      color: #F4D04E;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="./assets/images/illustration-article.svg" alt="Heading-Image" class="banner-image">
+    
+    <div class="card-details">
+      <p class="text-preset preset-3-bold"><span class="tag">Learning</span></p>
+      <p class="text-preset preset-3">Published 21 Dec 2023</p>
+      <p><a href="#" class="text-preset preset-1 heading">HTML & CSS foundations</a></p>
+      <p class="text-preset preset-2">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </div>
+    
+    <div class="profile-detail">
+      <img src="./assets/images/image-avatar.webp" alt="Profile Avatar" > 
+      <p class="text-preset preset-3-bold">Greg Hooper</p>
+    </div>
+    
+  </div>
+</body>
+</html>
