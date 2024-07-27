@@ -3,3 +3,5 @@ I'll be using `frontend-methor.io` and solve those challenges, since all those c
 Hence this repo is public.
 
 Cheers and happy coding
+
+Access all URLS by https://i-rebel-aj.github.io/frontend-mentor/{folder-name}/index.html
